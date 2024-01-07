@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.miracle.explorer.MainController"
+            fx:id="root">
+
+    <AnchorPane
+            AnchorPane.leftAnchor="0"
+            AnchorPane.rightAnchor="0"
+            AnchorPane.topAnchor="0"
+            AnchorPane.bottomAnchor="40"
+            style="-fx-background-color:rgba(0,255,0,0.2);">
+
+
+
+        <FlowPane
+                fx:id="desktopPane"
+                AnchorPane.leftAnchor="2"
+                AnchorPane.rightAnchor="2"
+                AnchorPane.topAnchor="2"
+                AnchorPane.bottomAnchor="2"
+                style="-fx-background-color:rgba(255,0,0,0.2);">
+
+        </FlowPane>
+
+    </AnchorPane>
+
+    <AnchorPane
+            translateZ="20"
+            prefHeight="40"
+          AnchorPane.leftAnchor="0"
+          AnchorPane.rightAnchor="0"
+          AnchorPane.bottomAnchor="0"
+                style="-fx-background-color:rgba(255,255,255,0.8);">
+
+        <HBox style="-fx-background-color:rgba(255,0,0,0.2);"
+              AnchorPane.leftAnchor="2"
+              AnchorPane.rightAnchor="2"
+              AnchorPane.topAnchor="2"
+              AnchorPane.bottomAnchor="2"
+              alignment="CENTER">
+
+
+            <Button>
+                <graphic>
+                    <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@../icons/launcher.png" />
+                        </image>
+                    </ImageView>
+                </graphic>
+            </Button>
+
+            <Button>
+                <graphic>
+                    <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@../icons/explorer.png" />
+                        </image>
+                    </ImageView>
+                </graphic>
+            </Button>
+        </HBox>
+
+        <HBox style="-fx-background-color:rgba(0,255,0,0.2); -fx-padding: 0 5 0 5;"
+              AnchorPane.rightAnchor="2"
+              AnchorPane.topAnchor="2"
+              AnchorPane.bottomAnchor="2"
+              alignment="CENTER_RIGHT"
+              prefWidth="80">
+            <VBox style="-fx-background-color:rgba(0,0,255,0.2);"
+                  alignment="CENTER_RIGHT">
+                <Text>00:00</Text>
+                <Text>24.12.2023</Text>
+            </VBox>
+        </HBox>
+
+    </AnchorPane>
+
+</AnchorPane>
